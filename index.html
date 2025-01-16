@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo-icon">
+        </div>
+        <nav>
+            <a href="#home" class="left-rounded">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#message-us" class="right-rounded">Message Us</a>
+        </nav>
+    </header>
+    <hr class="divider">
+
+    <!-- Home -->
+    <section id="home">
+        <h3>Hi <span id="name-display">User</span>, Welcome To My Website!</h3><br>
+        <div class="btn-scroll">
+            <button id="changeName">Change Your Name</button>
+        </div>
+
+    <!-- About -->
+    </section>
+        <section id="about">
+            <p>Ini adalah Website latihan saya.</p><br>
+            <div id="slider">
+                <ul id="slideWrap">
+                    <li><img src="img/banner1.jpg" alt="Banner 1"></li>
+                    <li><img src="img/banner2.jpg" alt="Banner 2"></li>
+                    <li><img src="img/banner3.png" alt="Banner 3"></li>
+                    <li><img src="img/banner4.jpg" alt="Banner 4"></li>
+                    <li><img src="img/banner5.jpg" alt="Banner 5"></li>
+                </ul>
+                <a id="prev" href="#">&#8810;</a>
+                <a id="next" href="#">&#8811;</a>
+            </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2><br><br>
+        <div class="locations">
+        <div class="location">
+            <div class="circle circle1"></div><br>
+            <p>Trenggalek</p>
+        </div>
+        <div class="location">
+            <div class="circle circle2"></div><br>
+            <p>Surabaya</p>
+        </div>
+        <div class="location">
+            <div class="circle circle3"></div><br>
+            <p>Tulungagung</p>
+        </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Message Us -->
+    <section id="message-us">
+        <h2>Message Us</h2><br><br>
+        <div class="message-container">
+        <form id="message-form">
+            <div class="form-row">
+            <label for="input-name">Nama:</label>
+            <input type="text" id="input-name" placeholder="Nama">
+            </div>
+            
+            <div class="form-row">
+            <label for="input-dob">Tanggal Lahir:</label>
+            <input type="date" id="input-dob">
+            </div>
+            
+            <div class="form-row">
+            <label>Jenis Kelamin:</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                <label for="male">Laki-Laki</label>
+                <input type="radio" id="female" name="gender" value="Perempuan">
+                <label for="female">Perempuan</label>
+            </div>
+            </div>
+            
+            <div class="form-row">
+            <label for="input-message">Pesan:</label>
+            <textarea id="input-message" rows="4" placeholder="Pesan"></textarea>
+            </div>
+            
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+
+        <div id="message-output" class="message-output">
+            <p>Output form akan tampil di sini...</p>
+        </div>
+        
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <footer>
+        <p>Created By Aiko Devy Ratnasari</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

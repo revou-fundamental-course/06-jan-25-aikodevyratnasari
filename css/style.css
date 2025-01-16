@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+}
+  
+.logo-icon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/logo.jpg");
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+}
+.left-rounded {
+    border-radius: 7px 0 0 7px;
+}
+
+.right-rounded {
+    border-radius: 0 7px 7px 0;
+}
+nav>a {
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+nav a:hover {
+    transform: scale(1.1);
+    background-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:white;
+}
+  
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    
+}
+  
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+  
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Slide */
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%; 
+    height: 90vh; 
+    max-height: 800px; 
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 750ms ease; 
+}
+#slider ul li {
+    flex: 0 0 100%;
+}
+#slider ul li img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+#slider #prev, #slider #next {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+#slider #prev {
+    left: 10px;
+}
+#slider #next {
+    right: 10px;
+}
+#slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Home dan About */
+#home, #about{
+    padding: 50px 20px;
+}
+.input-name {
+    margin-top: 20px;
+}
+.input-name input {
+    padding: 10px;
+    width: 50%;
+    max-width: 300px;
+}
+
+/* Gallery */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+    border-color: white;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.location {
+    text-align: center;
+}
+.location .circle {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.location .circle1 {
+    background-image: url("../img/trenggalek.jpg");
+}
+.location .circle2 {
+    background-image: url("../img/surabaya.jpg");
+}
+.location .circle3 {
+    background-image: url("../img/tulungagung.jpg");
+}
+.location .circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+#message-us{
+    padding: 50px 20px;
+}
+
+/* Message Us */
+.message-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#message-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.message-output {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button */
+button {
+    padding: 5px 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer; 
+    border-color: white;
+    border-radius: 7px 7px 7px 7px;
+}
+button:hover {
+    background-color: #333;
+}
+.submit-btn{
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    text-align: right;
+    width: 100%; 
+    background-color: black; 
+    padding: 10px; 
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .locations {
+        flex-direction: column;
+    }
+
+    header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #slider {
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    #slider {
+        max-width: 100%; 
+        height: 300px; 
+    }
+}
+
+
